@@ -18,6 +18,19 @@ CREATE TABLE member_grade(
     FOREIGN KEY(member_id) REFERENCES member(id)
 );
 
+INSERT INTO `member`
+VALUES
+	(1, '홍길동', 'asdf@fdas@com', '부산시'),
+    (2, '홍길도', 'fdas@asdf@com', '서울시'),
+    (3, '홍길수', 'asdf@fdas@com', '대전시'),
+    (4, '홍길기', 'asdf@fdas@com', '부산시');
+
+SELECT * 
+FROM member
+
+
+SELECT * FROM `member`;
+
 DROP TABLE employee;
 DROP TABLE employee_position;
 -- 직원 정보와 직위 정보를 저장하는 테이블 설계 1 : 1 관계
